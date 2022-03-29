@@ -129,7 +129,7 @@ body {
 .header__links a {
   text-decoration: none;
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #0f0f0f;
   transition: color 300ms ease-in-out;
 }
@@ -243,7 +243,7 @@ body {
 
 .container__continut .hero .hero-image {
   width: 100%;
-  height: 101vh;
+  height: 102vh;
 
   background-image: url("./img/dmitry-schemelev-OEnKKXvdbDU-unsplash.jpg");
 
@@ -256,7 +256,7 @@ body {
 
 .container__continut .hero .hero-text {
   width: 90vw;
-  height: min-content;
+  /* height: min-content; */
   color: #fff;
   position: absolute;
   bottom: 2rem;
@@ -274,6 +274,7 @@ span {
 /* -----------red-bar-1--------- */
 
 .red-bar-1 {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -290,7 +291,9 @@ span {
   margin: auto;
   width: 90vw;
   max-width: 55.375rem;
-  text-shadow: 1px 1px 3px #202020;
+  /* text-shadow: 1px 1px 3px #202020; */
+  text-shadow: 2px 2px 5px #000000;
+
   font-weight: 600;
   line-height: 1.7rem;
   letter-spacing: 2px;
@@ -446,7 +449,7 @@ padding-bottom: 1rem;}
 }
 .container-testimonials .size-test {
   width: 90vw;
-  
+  justify-content: center;
 }
 
 .container-testimonials  h2 {
@@ -457,7 +460,7 @@ padding-bottom: 1rem;}
 
 .container-testimonials .size-test p {
   line-height: 1.7rem;
-  letter-spacing: .25px;
+  /* letter-spacing: .25px; */
 }
 
 /* ------end section ----- */
@@ -465,33 +468,42 @@ padding-bottom: 1rem;}
 .red-bar-2 {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  /* text-align: center; */
   justify-content: center;
   margin: auto;
   background-color: #db3636;
   width: 100%;
   height: fit-content;
-  padding: 1rem;
+ 
   color: #fff;
 }
 .red-bar-2-container {
-  width: fit-content;
+  width: max-content;
+  padding: .5rem .5rem 0 .5rem ;
   margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .red-bar-2 .red-bar-2-container p {
-  margin: 0.5rem;
+  margin: 0;
   font-size: 1.2rem;
+  
 }
 
 .red-bar-2 .red-bar-2-container a {
   font-size: 1.2rem;
   text-decoration: none;
+  margin:.5rem ;
+
   color: #fff;
   text-shadow: 1px 2px 4px #202020;
 }
 .red-bar-2 .social img {
   width: 2rem;
-  margin: 0.6rem 1rem 0rem 1rem;
+  margin: .5rem;
 }
 
 .copyright {
@@ -519,25 +531,26 @@ padding-bottom: 1rem;}
   }
   .header__logo img {
     margin-bottom: -10px;
-    height: 2.5rem;
+    height: 2rem;
   }
 }
 
 @media (min-width: 768px) {
-
+  html{
+    font-size: 1.2rem;
+  }
   .cs{
     width: 93.5vw;
   }
 
   .container__continut .hero .hero-text {
     max-width: 69.375rem;
-    font-size: 1.5rem;
-    padding-right: 11rem;
-    padding-left: 1rem;
-    padding-bottom: 2rem;
+    
+   
+    /* bottom: .5rem; */
   }
 
-  .red-bar-1 p{font-size: 1.35rem;}
+  /* .red-bar-1 p{font-size: 1.35rem;} */
 
   .container__continut .about-1 {
     position: relative;
@@ -559,7 +572,7 @@ padding-bottom: 1rem;}
   .container__continut .about-1 .text_section {
     
     width: 60%;
-    font-size: 1.3rem;
+    
   }
 
   .container__continut .right-pictures, .container__continut .left-pictures {
@@ -570,12 +583,12 @@ padding-bottom: 1rem;}
   .container__continut  .right-text_section {
     
     width: 60%;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
   .container__continut .left-text_section {
     
     width: 60%;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
   .container__continut .sectiunea-2,  .container__continut .sectiunea-4 {
     position: relative;
@@ -606,21 +619,7 @@ padding-bottom: 1rem;}
     margin-right: auto;
   }
   
-  .container-testimonials .size-test{
-    display: flex;
-    /* flex-wrap: wrap ; */
-    column-gap: 3rem;
-    max-width: 69.375rem;
-  }
-  .container-testimonials .size-test p{
-    flex: 1 1 33%;
-    font-size: 1.1rem;
   
-  }
-  .container-testimonials  h2{
-    letter-spacing: 4px;
-    font-size: 2rem;
-  }
   /* .container__continut .carusel-galery{
     display: flex;
   }
@@ -630,13 +629,32 @@ padding-bottom: 1rem;}
 
   } */
 }
-
-@media (min-width: 933px){
-  
+@media (max-height:376px){
   .container__continut .hero .hero-text {
+    max-width: 69.375rem;
+    
   
-    font-size: 1.5rem;
-   
+    bottom: .5rem;
+  }
+}
+@media (min-width: 933px){
+
+
+  
+  .container-testimonials .size-test{
+    display: flex;
+    /* flex-wrap: wrap ; */
+    column-gap: 2rem;
+    max-width: 69.375rem;
+  }
+  .container-testimonials .size-test p{
+    flex: 1 1 33%;
+    /* font-size: 1.1rem; */
+  
+  }
+  .container-testimonials  h2{
+    letter-spacing: 4px;
+    /* font-size: 2rem; */
   }
 
 }
