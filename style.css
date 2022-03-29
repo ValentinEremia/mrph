@@ -108,13 +108,13 @@ body {
 }
 .header__menu {
   position: absolute;
-  width: calc(100% - 4rem);
+  width: calc(100% - 15rem);
   left: 50%;
   transform: translateX(-50%);
   background: #ebebeb;
   margin-top: 1.5rem;
   padding: 1.625rem;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0px 1px 3px#202020;
 }
 .header__menu a {
@@ -268,6 +268,8 @@ h1,
 h2 {
   margin: 0;
 }
+
+p{text-indent: 2.5rem;}
 span {
   color: #ea3a39;
 }
@@ -301,8 +303,11 @@ span {
 
 /* -------section 1----------- */
 
-.cs{padding-top: 1.5rem;
-padding-bottom: 1rem;}
+.cs{
+  padding-top: 1.5rem;
+padding-bottom: 1rem;
+}
+
 .container__continut .about-1 {
   margin-top: 2.3rem;
   display: flex;
@@ -323,6 +328,7 @@ padding-bottom: 1rem;}
   color: #0f0f0f;
   font-size: 1.1rem;
 }
+
 
 /* ------sectiunea 2----- */
 
@@ -463,6 +469,15 @@ padding-bottom: 1rem;}
   /* letter-spacing: .25px; */
 }
 
+
+/* --------fill-space---- */
+
+.fill-space{
+  width: 100%;
+  height: 3.5rem;
+}
+
+
 /* ------end section ----- */
 
 .red-bar-2 {
@@ -490,7 +505,7 @@ padding-bottom: 1rem;}
 .red-bar-2 .red-bar-2-container p {
   margin: 0;
   font-size: 1.2rem;
-  
+  text-indent: 0;
 }
 
 .red-bar-2 .red-bar-2-container a {
@@ -516,6 +531,7 @@ padding-bottom: 1rem;}
   width: 90vw;
   margin: auto;
   font-size: .8rem;
+  text-indent: 0;
 }
 /* ----------- */
 
@@ -618,7 +634,7 @@ padding-bottom: 1rem;}
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .container-testimonials .size-test{
     display: flex;
     column-gap: 2rem;
@@ -667,3 +683,11 @@ padding-bottom: 1rem;}
   }
 
 } */
+
+
+
+
+
+
+/* ----------about.html---------- */
+
