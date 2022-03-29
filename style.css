@@ -51,7 +51,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Public Sans", sans-serif;
+  font-family: "public sans", sans-serif;
   font-size: 1.1rem;
   /* font-weight: 300; */
   color: #fafafa;
@@ -108,7 +108,7 @@ body {
 }
 .header__menu {
   position: absolute;
-  width: calc(100% - 15rem);
+  width: calc(100% - 10rem);
   left: 50%;
   transform: translateX(-50%);
   background: #ebebeb;
@@ -267,6 +267,7 @@ body {
 h1,
 h2 {
   margin: 0;
+  
 }
 
 p{text-indent: 2.5rem;}
@@ -309,10 +310,11 @@ padding-bottom: 1rem;
 }
 
 .container__continut .about-1 {
-  margin-top: 2.3rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .container__continut .about-1 img {
   width: 100%;
@@ -430,6 +432,8 @@ padding-bottom: 1rem;
 .container__continut .carusel-galery{
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+ 
 }
 .container__continut .carusel-galery > *{
   flex: 1 1 33%;
@@ -473,18 +477,85 @@ padding-bottom: 1rem;
 /* --------fill-space---- */
 
 .fill-space{
+  position: relative;
   width: 100%;
-  height: 3.5rem;
+  height: 2.15rem;
+
 }
 
 
-/* ------end section ----- */
 
-.red-bar-2 {
+
+ /* ------end section ----- */
+  
+ .container__continut .red-bar-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* text-align: center; */
+  justify-content: center;
+  margin: auto;
+  background-color: #db3636;
+  width: 100%;
+  height: fit-content;
+ 
+  color: #fff;
+}
+.container__continut .red-bar-2-container {
+  width: max-content;
+  padding: .5rem .5rem 0 .5rem ;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.container__continut .red-bar-2 .red-bar-2-container p {
+  margin: 0;
+  font-size: 1.2rem;
+  text-indent: 0;
+}
+
+.container__continut  .red-bar-2 .red-bar-2-container a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin:.5rem ;
+
+  color: #fff;
+  text-shadow: 1px 2px 4px #202020;
+}
+.container__continut  .red-bar-2 .social img {
+  width: 2rem;
+  margin: .5rem;
+}
+
+.container__continut .copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #161616;
+  padding: 0.3rem;
+}
+.container__continut .copyright p {
+  width: 90vw;
+  margin: auto;
+  font-size: .8rem;
+  text-indent: 0;
+}
+/* ----------- */
+
+
+
+
+
+
+
+/* ------end section ----- */
+
+/* .red-bar-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
   justify-content: center;
   margin: auto;
   background-color: #db3636;
@@ -532,7 +603,8 @@ padding-bottom: 1rem;
   margin: auto;
   font-size: .8rem;
   text-indent: 0;
-}
+} */
+
 /* ----------- */
 
 @media (max-width: 766px) {
@@ -568,28 +640,44 @@ padding-bottom: 1rem;
 
   /* .red-bar-1 p{font-size: 1.35rem;} */
 
+
+
+
   .container__continut .about-1 {
-    position: relative;
-   
+    display: block;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    align-content: center;
+
+   
+   
     max-width: 69.375rem;
-    gap: 1.3rem;
+    
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
   }
  
-  .container__continut .about-1 img {
-    max-width: 40%;
+  .container__continut .about-1 img{
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    min-width: 310px;
+    float: left;
+    
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+ 
+  .container__continut .about-1 .text_section{
   
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
   }
-  .container__continut .about-1 .text_section {
-    
-    width: 60%;
-    
-  }
+
+
+
 
   .container__continut .right-pictures, .container__continut .left-pictures {
     width: 40%;
@@ -599,12 +687,12 @@ padding-bottom: 1rem;
   .container__continut  .right-text_section {
     
     width: 60%;
-    /* font-size: 1.3rem; */
+   
   }
   .container__continut .left-text_section {
     
     width: 60%;
-    /* font-size: 1.3rem; */
+   
   }
   .container__continut .sectiunea-2,  .container__continut .sectiunea-4 {
     position: relative;
@@ -688,6 +776,4 @@ padding-bottom: 1rem;
 
 
 
-
-/* ----------about.html---------- */
 
