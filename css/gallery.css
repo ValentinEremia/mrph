@@ -95,7 +95,7 @@
   -webkit-animation: scale 0.3s 0.3s ease forwards;
   animation: scale 0.3s 0.3s ease forwards;
   box-shadow: 0 0 180px 0 rgb(24, 24, 24);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 @-webkit-keyframes scale {
   to {
