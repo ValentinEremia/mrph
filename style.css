@@ -108,7 +108,7 @@ body {
 }
 .header__menu {
   position: absolute;
-  width: calc(100% - 10rem);
+  width: calc(100% - 8rem);
   left: 50%;
   transform: translateX(-50%);
   background: #ebebeb;
@@ -233,8 +233,6 @@ body {
 
 
 
-
-
 .container__continut .hero {
   display: flex;
   justify-content: center;
@@ -330,6 +328,24 @@ padding-bottom: 1rem;
   color: #0f0f0f;
   font-size: 1.1rem;
 }
+
+.container__continut .about-1 .btn-hero{
+  display: flex;
+  width: 85vw;
+  justify-content:flex-end;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.container__continut .about-1 .btn-hero a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bolder;
+  
+}
+
 
 
 /* ------sectiunea 2----- */
@@ -607,13 +623,13 @@ padding-bottom: 1rem;
 
 /* ----------- */
 
-@media (max-width: 766px) {
+@media (max-width: 768px) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 766px) {
+@media (min-width: 768px) {
   .hide-for-desktop {
     display: none;
   }
@@ -660,7 +676,7 @@ padding-bottom: 1rem;
   .container__continut .about-1 img{
     justify-content: center;
     align-items: center;
-    max-width: 30%;
+    max-width: 29%;
     min-width: 310px;
     float: left;
     
@@ -668,6 +684,11 @@ padding-bottom: 1rem;
     margin-bottom: 1rem;
   }
  
+  .container__continut .about-1 .text_section h3 {
+    margin: 0;
+    padding-top: 0;
+    letter-spacing: 1.25px;
+  }
   .container__continut .about-1 .text_section{
   
     align-items: center;
@@ -676,8 +697,12 @@ padding-bottom: 1rem;
     width: 100%;
   }
 
-
-
+  .container__continut .about-1 .btn-hero a:hover{
+    color: #ea3a39;
+  }
+  .container__continut .about-1 .btn-hero{
+    width: 96.5%;
+  }
 
   .container__continut .right-pictures, .container__continut .left-pictures {
     width: 40%;
